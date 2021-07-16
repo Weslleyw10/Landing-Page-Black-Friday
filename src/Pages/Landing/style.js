@@ -3,11 +3,23 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     width: 100%;
+    height: ${props => props.height ?? ''};
     display: flex;
     flex: ${props => props.flex ?? ''};
+    overflow: ${props => props.overflow ?? ''};
+    background-color: ${props => props.background ?? ''};
     flex-flow: row wrap;
-    padding: 5rem 2rem 0 2rem;
+    padding: 3rem 2rem;
 `
+
+export const SessionTitle = styled.h1`
+    color: #ffffff;
+    width: 100%;
+    height: 5vh;
+    margin-bottom: 1rem;
+    line-height: 1;
+    z-index: 99
+`;
 
 
 export const ItemSmall = styled.div`
@@ -19,23 +31,27 @@ export const ItemSmall = styled.div`
 
     background: #333333;
 
-    :last-child{
-        margin-right: 0;
-    }
-
 `
 
 export const ItemMedium = styled.div`
-    width: calc(33% - 1rem);
-    height: 45vh;
+    min-width: calc(33.33% - 1rem);
+    max-height: 45vh;
     
     margin-right: 1rem;
     margin-bottom: 1rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 
-    background: #333333;
+    overflow: hidden;
+    border-radius: 7px;
 
-    :last-child{
+
+    :nth-last-child() {
         margin-right: 0;
+    }
+
+    img {
+        width: 100%;
+        object-fit: cover;
     }
 
 `;
@@ -49,12 +65,11 @@ export const ItemLarge = styled.div`
 
     background: #333333;
 
-    :last-child{
+    :last-of-type{
         margin-right: 0;
     }
 
 `;
-
 
 export const Row = styled.div`
     width: 100%;
@@ -75,4 +90,17 @@ export const Row = styled.div`
         font-weight: bold;
         letter-spacing: 1pt;
     }
+`;
+
+export const Carousel = styled.div`
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+
+    .carousel-container-imgs {
+        display: flex;
+        transform: translateX(0);
+        transition: transform 0.5s ease-in-out;
+    }
+
 `;

@@ -1,0 +1,17 @@
+[33mcommit a3f6d55858b651affb47340b026b2f7be1761e95[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Weslleyw10 <weslleylopes.dev@gmail.com>
+Date:   Thu Jul 15 20:54:28 2021 -0300
+
+    Structuring Layout
+
+[33mcommit 0e1678cdd50e57c79bf751299dfa1475c42f6f42[m
+Author: Weslleyw10 <weslleylopes.dev@gmail.com>
+Date:   Mon Jul 12 20:01:05 2021 -0300
+
+    Alteração do titulo da página principal
+
+[33mcommit c3efcf64b594785492d732091fecb9c7b8ab0649[m
+Author: Weslleyw10 <weslleylopes.dev@gmail.com>
+Date:   Mon Jul 12 19:46:10 2021 -0300
+
+    Initialize project using Create React App
