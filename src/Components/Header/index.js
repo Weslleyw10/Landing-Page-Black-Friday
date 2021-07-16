@@ -27,7 +27,6 @@ const Header = () => {
         <Container
             position="relative"
         >
-
             <div className="content">
 
                 <div className="header-title">
@@ -53,6 +52,10 @@ const Header = () => {
                     </Button>
                 </form>
             </div>
+
+            <div className="blur"></div>
+
+
         </Container>
 
     )

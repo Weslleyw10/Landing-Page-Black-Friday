@@ -58,6 +58,15 @@ export const Container = styled.div`
         }
     }
 
+    .blur {
+        width: 100%;
+        height: 30px;
+        background: linear-gradient(0deg, #212020 50%, rgba(33, 32, 32, 0) 78.4%);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
 `;
 
 export const Logo = styled.img`
