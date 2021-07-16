@@ -7,12 +7,8 @@ import { Container, SessionTitle, Carousel, ItemSmall, ItemMedium, ItemLarge, Ro
 
 const Landing = () => {
     const [translateX1, setTranslateX1] = useState(0)
-<<<<<<< HEAD
 
-=======
-   
-    let index = 0
->>>>>>> 6f6858876aa2b7a290a53a27aa092f223802bb73
+
     let img = [
         {
             "url": "http://demo2.posthemes.com/pos_rozer/layout3/81-large_default/new-balance-fresh-foam-arishi-sport-2.jpg"
@@ -39,96 +35,52 @@ const Landing = () => {
         {
             "url": "http://demo.posthemes.com/pos_ecolife_singleproduct/skateboard/648-large_default/customizable-mug.jpg"
         },
-<<<<<<< HEAD
-
     ]
 
     useEffect(() => {
         let index = 0
         const changeImage = () => {
-=======
-        
-    ]
 
-    useEffect(() => {
-        const changeImage = () => {
-
->>>>>>> 6f6858876aa2b7a290a53a27aa092f223802bb73
             if (index > img.length - 3) {
                 index = 0
             } else if (index < 0) {
                 index = img.length - 3
             }
-<<<<<<< HEAD
             setTranslateX1(-index * 100 / 3)
         }
 
-=======
-    
-            setTranslateX1(-index * 100 / 3)
-        }
-    
->>>>>>> 6f6858876aa2b7a290a53a27aa092f223802bb73
         const handleRun = () => {
             index++
             changeImage()
         }
-<<<<<<< HEAD
 
         setInterval(handleRun, 2000)
 
 
     }, [img.length])
-=======
-    
-        let interval = setInterval(handleRun, 2000)
-
-
-    },[])
->>>>>>> 6f6858876aa2b7a290a53a27aa092f223802bb73
 
     return (
         <>
             <Header />
 
-            <Container
-                overflow="hidden"
-<<<<<<< HEAD
-            // height="100vh"
-=======
-                // height="100vh"
->>>>>>> 6f6858876aa2b7a290a53a27aa092f223802bb73
-            >
+            <Container>
                 <SessionTitle>
                     Coleções
                 </SessionTitle>
-<<<<<<< HEAD
 
                 <Carousel>
-                    <div className="carousel-container-imgs"
+                    <div 
+                        className="carousel-container-imgs"
                         style={{
                             transform: `translateX(${translateX1}%)`
                         }}
-=======
-                
-                <Carousel>
-                    <div className="carousel-container-imgs"
-                    style={{
-                        transform: `translateX(${translateX1}%)`
-                    }}
->>>>>>> 6f6858876aa2b7a290a53a27aa092f223802bb73
                     >
 
                         {
                             img.map((item, index) => (
                                 <ItemMedium key={index}>
-<<<<<<< HEAD
-                                    <img src={item.url} alt={item.ur} />
-=======
-                                    <img src={item.url} />
->>>>>>> 6f6858876aa2b7a290a53a27aa092f223802bb73
+                                    <img src={item.url} alt={item.url} />
                                 </ItemMedium>
-
                             ))
                         }
 

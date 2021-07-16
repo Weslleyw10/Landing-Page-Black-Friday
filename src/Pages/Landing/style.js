@@ -18,7 +18,7 @@ export const SessionTitle = styled.h1`
     height: 5vh;
     margin-bottom: 1rem;
     line-height: 1;
-    z-index: 99
+    z-index: 99;
 `;
 
 
