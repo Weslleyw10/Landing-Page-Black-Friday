@@ -35,7 +35,7 @@ export const ItemSmall = styled.div`
 
 export const ItemMedium = styled.div`
     min-width: calc(33.33% - 1rem);
-    max-height: 45vh;
+    /* max-height: 60vh; */
     
     margin-right: 1rem;
     margin-bottom: 1rem;
@@ -43,7 +43,6 @@ export const ItemMedium = styled.div`
 
     overflow: hidden;
     border-radius: 7px;
-
 
     :nth-last-child() {
         margin-right: 0;
