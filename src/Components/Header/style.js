@@ -22,10 +22,12 @@ export const Container = styled.div`
         justify-content: center;
         align-items: center;
         flex-direction: column;
+
         
         .header-title {
-            width: 100%;
+            width: 80%;
             padding: 0 4rem;
+            text-align: center;
 
             h1 {
                 font-weight: bold;
@@ -50,7 +52,7 @@ export const Container = styled.div`
         
 
         form {
-            width: 100%;
+            width: 80%;
             display: flex;
             flex-direction: column;
             justify-content: center;

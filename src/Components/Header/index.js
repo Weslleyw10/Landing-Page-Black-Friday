@@ -2,7 +2,6 @@ import { useState } from 'react'
 
 import { Container, Input, Button } from './style'
 
-
 const Header = () => {
 
     const [customer, setCustomer] = useState({
@@ -20,7 +19,6 @@ const Header = () => {
         localStorage.setItem('@weslleylsilva/customer', jsonConverter)
 
         console.log("Seus dados: ", customer)
-
     }
 
     return (

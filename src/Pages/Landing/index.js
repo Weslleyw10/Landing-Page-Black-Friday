@@ -8,8 +8,6 @@ import {
     ItemLarge, 
     } from './style'
 
-
-
 const Landing = () => {
     let data = {
         products:  [
