@@ -4,13 +4,13 @@ import bg from '../../Assets/images/bg.png'
 
 export const Container = styled.div`
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 3.78%, rgba(0, 0, 0, 0.324) 100%), url(${bg});
+    /* background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 3.78%, rgba(0, 0, 0, 0.324) 100%), url(${bg}); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -22,7 +22,6 @@ export const Container = styled.div`
         justify-content: center;
         align-items: center;
         flex-direction: column;
-
         
         .header-title {
             width: 100%;
@@ -34,15 +33,16 @@ export const Container = styled.div`
                 text-align: center;
                 text-transform: uppercase;
                 line-height: .8;
-                font-size: 8rem;
+                font-size: 5rem;
                 margin-bottom: 3rem;
             }
 
             p {
                 max-width: 500px;
-                font-size: 2rem;
+                font-size: 1.5rem;
                 color: #ffffff;
                 align-self: flex-start;
+                margin-bottom: 1rem;
 
             }
         }
@@ -111,7 +111,7 @@ export const Button = styled.button`
     border-radius: 12px;
     border: 0;
     color: #ffffff;
-    font-size: 2rem;
+    font-size: 1.5rem;
     cursor: pointer;
     margin-top: .5rem;
 

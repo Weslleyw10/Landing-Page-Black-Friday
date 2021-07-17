@@ -8,8 +8,17 @@ export const Container = styled.div`
     flex: ${props => props.flex ?? ''};
     overflow: ${props => props.overflow ?? ''};
     background-color: ${props => props.background ?? ''};
+    justify-content: ${props => props.justify ?? ''};
     flex-flow: row wrap;
     padding: 3rem 2rem;
+
+    .content {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
 `
 
 export const SessionTitle = styled.h1`
@@ -23,13 +32,19 @@ export const SessionTitle = styled.h1`
 
 
 export const ItemSmall = styled.div`
-    width: calc(10% - 1rem);
-    height: 10vh;
+    width: calc(15% - 1rem);
+    height: 20vh;
     
     margin-right: 1rem;
     margin-bottom: 1rem;
+    overflow: hidden;
 
-    background: #333333;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+    }
 
 `
 
@@ -57,12 +72,19 @@ export const ItemMedium = styled.div`
 
 export const ItemLarge = styled.div`
     width: calc(50% - 1rem);
-    height: 45vh;
+    height: 90vh;
     
     margin-right: 1rem;
     margin-bottom: 1rem;
 
     background: #333333;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        /* border-radius: 50%; */
+    }
 
     :last-of-type{
         margin-right: 0;
@@ -91,15 +113,3 @@ export const Row = styled.div`
     }
 `;
 
-export const Carousel = styled.div`
-    width: 100%;
-    display: flex;
-    overflow: hidden;
-
-    .carousel-container-imgs {
-        display: flex;
-        transform: translateX(0);
-        transition: transform 0.5s ease-in-out;
-    }
-
-`;
